@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>To-Do List</title>
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <!-- Todo List -->
+      <section class="todo">
+         <h1>Simple To-Do List</h1>
+         <div class="input">
+            <input type="text" class="input-field" id="todoInput" placeholder="Enter a Task" />
+            <button class="addBtn" id="btnAdd">+</button>
+         </div>
+         <!-- Task List -->
+         <div class="tasklist" id="scroll">
+            <ul>
+               <li>
+                  <input type="checkbox" class="cbIcon" style="display: none;">
+                  <span class="task-name"></span>
+                  <div class="task-buttons">
+                     <button class="edit-button" id="btnEdit" style="display: none;"><span class="edit-icon-container"><span class="edit-icon">&#9999;</span></span></button>
+                     <button class="delete-button" id="btnDelete" style="display: none;"><span class="delete-icon">&#128465;</span></button>
+                  </div>
+               </li>
+            </ul>
+         </div>
+         <!-- Clear All Button -->
+         <div class="clear-all">
+            <button class="clearAllBtn" id="btnClear">Clear All</button>
+         </div>
+      </section>
+      <footer>
+         <div class="footer">
+            <p class="name">Kreian Lanaria | Rod Satsatin</p>
+         </div>
+      </footer>
+      <script src="script.js"></script>
+   </body>
+</html>
